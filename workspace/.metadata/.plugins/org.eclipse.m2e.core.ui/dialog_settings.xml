@@ -14,6 +14,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="/home/italomdlp/leda/workspace/Roteiro-Revisao-Generics-environment"/>
 			<item value="/home/italomdlp/leda/workspace/Roteiro-Revisao-Arrays-Interfaces-environment"/>
 		</list>
 		<list key="projectNameTemplate">
