@@ -1,4 +1,0 @@
-INDEX VERSION 1.127+/home/italomdlp/leda/workspace/.metadata/.plugins/org.eclipse.jdt.core
-2863734405.index
-2148992852.index
-197674846.index
