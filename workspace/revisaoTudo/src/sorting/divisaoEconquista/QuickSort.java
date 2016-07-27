@@ -9,6 +9,11 @@ public class QuickSort<T extends Comparable<T>> extends AbstractSorting<T> {
 
 	@Override
 	public void sort(T[] array, int leftIndex, int rightIndex) {
+		
+		if(array == null || array.length == 0 || leftIndex < 0 || rightIndex < leftIndex){
+			return;
+		}
+		
 		if(leftIndex >= rightIndex){
 			return;
 		} else {
@@ -21,7 +26,7 @@ public class QuickSort<T extends Comparable<T>> extends AbstractSorting<T> {
 	private int partition(T[] array, int left, int right){
 		int i = left;
 		for(int j = left + 1; j <= right; j++){
-			if(array[j].compareTo(array[left]) < 0){
+			if(array[j].compareTo(array[i]) < 0){
 				i++;
 				int k = j;
 				while(k >= i){
