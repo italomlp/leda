@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<head/><log>
+<record>
+  <date>2016-08-01T15:18:35.426-0300</date>
+  <logger>ITALO MENEZES DE LIMA POROCA</logger>
+  <level>FINE</level>
+  <message>File 115111014-ITALO MENEZES DE LIMA POROCA.zip was received. It was sent by ITALO MENEZES DE LIMA POROCA from IP 127.0.1.1</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2016-08-01T19:25:41.687-0300</date>
+  <logger>ITALO MENEZES DE LIMA POROCA</logger>
+  <level>FINE</level>
+  <message>File 115111014-ITALO MENEZES DE LIMA POROCA.zip was received. It was sent by ITALO MENEZES DE LIMA POROCA from IP 127.0.1.1</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2016-08-01T22:34:58.643-0300</date>
+  <logger>ITALO MENEZES DE LIMA POROCA</logger>
+  <level>FINE</level>
+  <message>File 115111014-ITALO MENEZES DE LIMA POROCA.zip was received. It was sent by ITALO MENEZES DE LIMA POROCA from IP 127.0.1.1</message>
+</record>
