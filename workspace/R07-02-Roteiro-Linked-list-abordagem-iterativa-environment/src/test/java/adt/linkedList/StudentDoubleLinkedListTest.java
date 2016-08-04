@@ -26,14 +26,14 @@ public class StudentDoubleLinkedListTest extends StudentLinkedListTest{
 	}
 	
 	private void getImplementations(){
-		//TODO O aluno deve ajustar aqui para instanciar sua implementaÃ§Ã£o
+		//TODO O aluno deve ajustar aqui para instanciar sua implementação
 		lista1 = new DoubleLinkedListImpl<>();
 		lista2 = new DoubleLinkedListImpl<>();
 		lista3 = new DoubleLinkedListImpl<>();
 	}
 
 		
-	// MÃ©todos de DoubleLinkedList
+	// Métodos de DoubleLinkedList
 	
 	@Test
 	public void testInsertFirst(){

@@ -16,32 +16,35 @@ public class QueueDoubleLinkedListImpl<T> implements Queue<T> {
 	
 	@Override
 	public void enqueue(T element) throws QueueOverflowException {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Not implemented yet!");
+		if (this.isFull())
+			throw new QueueOverflowException();
+		
+		this.list.insert(element);
 	}
 
 	@Override
 	public T dequeue() throws QueueUnderflowException {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Not implemented yet!");
+		if (this.isEmpty())
+			throw new QueueUnderflowException();
+		
+		T elemento = this.head();
+		this.list.removeFirst();
+		return elemento;
 	}
 
 	@Override
 	public T head() {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Not implemented yet!");
+		return ((DoubleLinkedListImpl<T>) this.list).getHead().getData();
 	}
 
 	@Override
 	public boolean isEmpty() {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Not implemented yet!");
+		return this.list.isEmpty();
 	}
 
 	@Override
 	public boolean isFull() {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Not implemented yet!");
+		return this.list.size() == this.size;
 	}
 
 }

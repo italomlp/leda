@@ -7,14 +7,14 @@ public class SingleLinkedListImpl<T> implements LinkedList<T> {
 	
 	
 	public SingleLinkedListImpl() {
-//		this.head = new SingleLinkedListNode<T>();
 		this.head = null;
 		this.size = 0;
 	}
 
 	@Override
 	public boolean isEmpty() {
-		return this.head == null;
+//		return this.head == null;
+		return this.size == 0;
 	}
 
 	@Override
@@ -24,10 +24,13 @@ public class SingleLinkedListImpl<T> implements LinkedList<T> {
 
 	@Override
 	public T search(T element) {
+		
 		SingleLinkedListNode<T> aux = this.head;
+		
 		while (aux != null && !aux.getData().equals(element)) {
 			aux = aux.getNext();
 		}
+		
 		if (aux == null)
 			return null;
 		
@@ -36,13 +39,19 @@ public class SingleLinkedListImpl<T> implements LinkedList<T> {
 
 	@Override
 	public void insert(T element) {
+		if (element == null)
+			return;
+		
 		if (isEmpty())
 			this.head = new SingleLinkedListNode<T>(element, null);
 		else {
+			
 			SingleLinkedListNode<T> aux = this.head;
+			
 			while (aux.getNext() != null) {
 				aux = aux.getNext();
 			}
+			
 			aux.setNext(new SingleLinkedListNode<T>(element, null));
 		}
 		this.size++;
@@ -51,10 +60,14 @@ public class SingleLinkedListImpl<T> implements LinkedList<T> {
 	@Override
 	public void remove(T element) {
 		if (!isEmpty()) {
+			
 			if (this.head.getData().equals(element)) {
+				
 				this.head = this.head.getNext();
 				this.size--;
+				
 			} else {
+				
 				SingleLinkedListNode<T> prev = null;
 				SingleLinkedListNode<T> aux = this.head;
 				
@@ -64,21 +77,28 @@ public class SingleLinkedListImpl<T> implements LinkedList<T> {
 				}
 				
 				if (aux != null) {
+					
 					prev.setNext(aux.getNext());
 					this.size--;
+					
 				}
 			}
 		}
 	}
 	@Override
 	public T[] toArray(){
+		
 		SingleLinkedListNode<T> aux = this.head;
 		T[] array = (T[]) new Object[this.size];
+		
 		int i = 0;
 		while (aux != null) {
+			
 			array[i++] = (T) aux.getData();
 			aux = aux.getNext();
+			
 		}
+		
 		return array;
 	}
 
