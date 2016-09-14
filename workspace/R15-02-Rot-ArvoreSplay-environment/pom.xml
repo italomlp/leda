@@ -32,10 +32,10 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.3</version>
+				<version>3.5.1</version>
 				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
+					<source>1.8</source>
+					<target>1.8</target>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -82,9 +82,9 @@
 							<goal>compact</goal>
 						</goals>
 						<configuration>
-							<matricula>115111014</matricula>
+							<matricula>INSIRA NEU NUMERO DE MATRICULA</matricula>
 							<semestre>2016.1</semestre>
-							<roteiro>R11-02</roteiro>
+							<roteiro>R0X-0X</roteiro>
 							<url>http://web.cloud.lsd.ufcg.edu.br:44174/submission/submitRoteiro</url>
 						</configuration>
 					</execution>

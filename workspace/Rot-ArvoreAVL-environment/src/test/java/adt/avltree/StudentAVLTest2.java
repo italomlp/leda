@@ -69,4 +69,5 @@ public class StudentAVLTest2 {
 		assertEquals(NIL, avl.getRoot());
 		assertTrue(avl.isEmpty());
 	}
+	
 }
